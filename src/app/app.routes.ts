@@ -5,7 +5,6 @@ import { SearchComponent } from './pages/search/search.component';
 
 export const routes: Routes = [
     {path:'home', component: HomeComponent},
-    // {path:'home/:texto', component: HomeComponent},
     {path:'pokemon/:name', component: PokemonComponent},
     {path:'search/:texto', component: SearchComponent},
   

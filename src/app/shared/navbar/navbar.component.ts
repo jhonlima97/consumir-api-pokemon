@@ -26,7 +26,6 @@ export class NavbarComponent implements OnInit {
   }
 
   search(texto:string){
-    console.log(texto);
     texto = texto.trim();
     if (texto.length === 0) {
       return;

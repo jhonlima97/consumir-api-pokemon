@@ -6,7 +6,7 @@ import { PokemonService } from '../../services/pokemon.service';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ImgSecurityPipe } from "../../pipes/img-security.pipe";
-import { EMPTY, catchError, forkJoin, of } from 'rxjs';
+import { catchError, forkJoin, of } from 'rxjs';
 
 @Component({
     selector: 'app-search',
@@ -16,6 +16,7 @@ import { EMPTY, catchError, forkJoin, of } from 'rxjs';
     providers: [PokemonService, HttpClientModule],
     imports: [RouterModule,CommonModule, ImgSecurityPipe]
 })
+
 export class SearchComponent implements OnInit {
 
   pokemons: Pokemon[] = [];

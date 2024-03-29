@@ -1,11 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { EMPTY, Observable, forkJoin, of } from 'rxjs';
-import { catchError, map, switchMap } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { Skills } from '../interfaces/skills.interface';
 import { PokemonDetails } from '../interfaces/pokemon.interface';
 import { Pokemon, PokemonsResponse } from '../interfaces/pokemons.interaface';
-import { EMPTY_OBSERVER } from 'rxjs/internal/Subscriber';
 
 
 @Injectable({
@@ -34,7 +33,7 @@ export class PokemonService {
    )
   }
 
-  // Lista los primeros 100 pokemones
+  // Busqueda por parametro ingresado
   // getPokemons(limit: number = 20): Observable<Pokemon[]> {
   //   return this.http.get<PokemonsResponse>(`${this.baseURL}/pokemon?limit=${limit}`).pipe(
   //     map(res => res.results)
