@@ -32,6 +32,6 @@ propia lógica para la paginación tiene que analizar la api y desarrollar su pa
 ✅ npm version 9.8.0     
 
 ## Recomendaciones para ejecutar el App
-Ejecuta nmp install para instlar todas las dependecnias  
+Ejecuta npm install para instlar todas las dependecnias  
 Luego ejecutar ng serve -o para abrir la app    
 
