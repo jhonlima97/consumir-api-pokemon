@@ -2,7 +2,7 @@
 Este proyecto es un prueba tecnica, para un puesto de DEVELOPER FRONTEND 
 donde se debe consumir la API de pokemones.  
 
--  [Api a usar: 👉](https://pokeapi.co)  
+-  [Api a usar: 👉] (https://pokeapi.co)  
 - Frameworks Permitidos: React, VueJs, Angular, Laravel    
 
 ## App Features  
