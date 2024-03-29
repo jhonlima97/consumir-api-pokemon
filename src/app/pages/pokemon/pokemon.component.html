@@ -1,0 +1,16 @@
+<div class="row animate__animated animate__fade-in mt-5 ">
+  
+    <div class="col-md-6 text-center">
+        <h1>POKEMON: <img [src]="imgAnimated" alt=""> <small> {{namePokemon}}</small> </h1>
+        
+        <img [src]="imgPokemon | imgSecurity" [alt]="namePokemon" 
+        class="img-fluid img-round animate__animated animate__jack-in-the-box">
+       
+    </div>
+    <div class="col-md-6" >
+        <h1>Descripcion: </h1>
+        <h5>{{descripcion}}</h5>
+        <h2>Especie:<small> {{especie}}</small> </h2>
+    </div>
+   
+</div>

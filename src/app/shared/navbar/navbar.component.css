@@ -1,0 +1,18 @@
+.navbar {
+    padding-inline: 1%;
+    background-color: rgb(131, 123, 123);
+  }
+  
+  .form-inline input {
+    margin-right: 1rem;
+  }
+
+  .btn-success {
+    background-color: rgb(45, 228, 45);
+    color: black;
+  }
+
+  .navbar-brand {
+    color: black;
+    font-weight: bold;
+  }

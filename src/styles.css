@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background-color:black;
+}
+
+h1,h2,h5{
+    color:white;
+}
+p{
+    color:white;
+}
+
+.cursor{
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+<div class="container mb-5">
+    <div class="text-center">
+        <img src="./assets/images/logopokemon.png" class="img-fluid animate__animated animate__tada">
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let pokemon of pokemons">
+            <div class="card-header bg-dark text-center"> <h2> {{pokemon.name}} </h2></div>
+            <!-- <img src="./assets/images/pokeball.png" class="img-thumbnail cursor" (click)="onclickPokemon(pokemon.name)"> -->
+            <img [src]="pokemon.imgPokemon" class="img-thumbnail cursor" (click)="onclickPokemon(pokemon.name)">
+        </div>
+    </div>
+</div>
+
+<div class="mt-5 d-flex justify-content-between">
+    <button class="btn btn-primary btn-lg btn-pagina"
+        [disabled]="btnActive" (click)=" paginarPrevious()"><b>Previous</b></button>
+        <div class="flex-grow-1"></div>
+    <button class="btn btn-primary btn-lg btn-pagina" 
+        (click)=" paginarNext()"><b>Next</b></button>
+</div> <br>
