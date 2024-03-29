@@ -34,7 +34,7 @@ export class PokemonService {
    )
   }
 
-  // Lista los primeros 20 pokemones
+  // Lista los primeros 100 pokemones
   // getPokemons(limit: number = 20): Observable<Pokemon[]> {
   //   return this.http.get<PokemonsResponse>(`${this.baseURL}/pokemon?limit=${limit}`).pipe(
   //     map(res => res.results)
@@ -43,7 +43,7 @@ export class PokemonService {
 
   //Busqueda por cadena de texto
   getSearchPokemon(texto: string): Observable<Pokemon[]> {
-    return this.http.get<{results: Pokemon[]}>(`${this.baseURL}/pokemon?limit=20`)
+    return this.http.get<{results: Pokemon[]}>(`${this.baseURL}/pokemon?limit=100`)
       .pipe(
         map(response => response.results.filter(pokemon => pokemon.name.includes(texto.toLowerCase())))
       );
