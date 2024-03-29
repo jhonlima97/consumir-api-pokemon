@@ -42,8 +42,8 @@ export class HomeComponent implements OnInit{
               // Almacena la imagen en el objeto pokemonImages para que puedas reutilizarla más tarde
               this.pokemonImages[pokemon.name] = imgPokemon;
               pokemon.imgPokemon = imgPokemon;
-              console.log("Name pokemon: ", pokemon.name);
-              console.log("Image pokemon: ", pokemon.imgPokemon);
+              // console.log("Name pokemon: ", pokemon.name);
+              // console.log("Image pokemon: ", pokemon.imgPokemon);
             }
             return pokemon;
           })
@@ -126,5 +126,4 @@ export class HomeComponent implements OnInit{
     });
   }
   
-
 }
