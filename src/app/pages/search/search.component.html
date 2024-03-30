@@ -1,14 +1,17 @@
 <!-- <h1> Termino de búsqueda: <small>{{ txtSearch }}</small> </h1> -->
+<div class="container mb-5">
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col" *ngFor="let pokemon of pokemons">
-    <div class="card-header bg-dark text-center">
-      <h2>{{ pokemon.name }}</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let pokemon of pokemons">
+      <div class="card-header bg-dark text-center">
+        <h2>{{ pokemon.name }}</h2>
+      </div>
+      <img [src]="pokemon.imgPokemon" class="img-thumbnail cursor" (click)="onclickPokemon(pokemon.name)">
     </div>
-    <img [src]="pokemon.imgPokemon" class="img-thumbnail cursor" (click)="onclickPokemon(pokemon.name)">
   </div>
-</div> <br>
 
-<div class="alert alert-warning mt-5 text-center" *ngIf="pokemons.length === 0" role="alert">
-  <h3><b>No hay resultados de pokemones</b></h3>
+  <div class="alert alert-warning mt-5 text-center" *ngIf="pokemons.length === 0" role="alert">
+    <h3><b>No hay resultados de pokemones</b></h3>
+  </div>
+
 </div>
