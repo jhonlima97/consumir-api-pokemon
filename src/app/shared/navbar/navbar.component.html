@@ -9,8 +9,7 @@
   <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
     <ul class="navbar-nav"></ul>
     <form class="form-inline d-flex">
-      <input #txtSearch class="form-control mr-sm-2" type="search" placeholder="Buscar Pokemon" aria-label="Search"
-        (keyup.enter)="search(txtSearch.value)">
+      <input #txtSearch class="form-control mr-sm-2" type="search" placeholder="Buscar Pokemon" aria-label="Search" (keyup.enter)="search(txtSearch.value)">
 
       <button (click)="search(txtSearch.value)" class="btn btn-success" type="submit"><b>Search</b></button>
     </form>

@@ -4,6 +4,7 @@ donde se debe consumir la API de pokemones.
 
 -  Api a usar: 👉 https://pokeapi.co  
 - Frameworks Permitidos: React, VueJs, Angular, Laravel    
+- App en producción 👉: https://testapi-jwlc.netlify.app/  
 
 ## App Features  
 
@@ -24,7 +25,7 @@ propia lógica para la paginación tiene que analizar la api y desarrollar su pa
 
 4. Se tomará en cuenta el orden del código(MVC ó Modularizado), no queremos un código spaguetti, tienen 24 horas para la entrega, deben crear su repositorio en Github.  
 
-## Technologies usadas
+## Technologies used
 
 ✅ Angular CLI version 17.1.0  
 ✅ Node JS version 20.5.0  
@@ -33,5 +34,7 @@ propia lógica para la paginación tiene que analizar la api y desarrollar su pa
 
 ## Recomendaciones para ejecutar el App
 Ejecuta npm install para instlar todas las dependecnias  
-Luego ejecutar ng serve -o para abrir la app    
+Luego ejecutar ng serve -o para abrir la app  
+
+
 
