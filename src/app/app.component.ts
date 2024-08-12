@@ -11,9 +11,8 @@ import { SharedModule } from './shared/shared.module';
     CommonModule, RouterOutlet,
     PagesModule, SharedModule
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'Api-Pokemon';
+
 }

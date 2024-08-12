@@ -10,7 +10,6 @@ import { CommonModule } from '@angular/common';
     selector: 'app-pokemon',
     standalone: true,
     templateUrl: './pokemon.component.html',
-    styleUrl: './pokemon.component.css',
     providers: [PokemonService, HttpClientModule],
     imports: [CommonModule, ImgSecurityPipe]
 })

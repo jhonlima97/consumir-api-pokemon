@@ -12,7 +12,6 @@ import { catchError, forkJoin, of } from 'rxjs';
     selector: 'app-search',
     standalone: true,
     templateUrl: './search.component.html',
-    styleUrl: './search.component.css',
     providers: [PokemonService, HttpClientModule],
     imports: [RouterModule,CommonModule, ImgSecurityPipe]
 })
